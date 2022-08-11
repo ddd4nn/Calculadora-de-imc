@@ -12,21 +12,21 @@ co2 = '#4065a1' #azul / blue
 
 janela = Tk()
 janela.title('')
-janela.geometry('1280x720')
+janela.geometry('295x230')
 janela.configure(bg=co0)
 
 #--------------- divisão das janelas ---------------#
 
-frame_cima= Frame(janela, width=1280, height=240, bg=co0, pady= 0, padx=0, relief="flat")
+frame_cima= Frame(janela, width=295, height=50, bg=co0, pady= 0, padx=0, relief="flat")
 frame_cima.grid(row=0, column=0, sticky=NSEW)
 
-frame_baixo= Frame(janela, width=1280, height=480, bg=co0, pady= 0, padx=0, relief="flat")
+frame_baixo= Frame(janela, width=295, height=180, bg=co0, pady= 0, padx=0, relief="flat")
 frame_baixo.grid(row=1, column=0, sticky=NSEW)
 
 #--------------- configurando frame cima ---------------#
 
 app_nome = Label(frame_cima, text='Calculadora de IMC', width=23, height=1, padx=0, relief='flat', anchor='center', font=('Ubuntu 16 bold'), bg=co0, fg=co1)
-app_nome.place(x=500, y=0)
+app_nome.place(x=0, y=0)
 
 app_linha = Label(frame_cima, text='', width=1300, height=1, padx=0, relief='flat', anchor='center', font=('Ubuntu 1 '), bg=co2, fg=co2)
 app_linha.place(x=0, y=35)
