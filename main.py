@@ -2,11 +2,23 @@ from tkinter import *
 from tkinter import font
 from tkinter import ttk
 
+
+
 #--------cores-------#
 
-co0 = '#ffffff' #branco / white
-co1 = '#444466' #preto / black
-co2 = '#4065a1' #azul / blue
+""" 
+    
+    paleta de cores teste
+    #343434 cinza 1
+    #464646 cinza 2
+    #FFFFFF branco
+    #0077b6 azul claro
+    
+"""
+
+co0 = '#00303b' #branco / white
+co1 = '#ff7777' #preto / black
+co2 = '#ffce96' #azul / blue
 
 #---------janela--------#
 
@@ -82,13 +94,13 @@ e_altura.grid(row=1, column=1, sticky=NSEW, pady=10, padx=3)
 #--------------exibindo o resultado-------------------#
 
 #frame do resultado
-l_resultado = Label(frame_baixo, text='---', width=5, height=1, padx=6, pady=12, relief='flat', anchor='center', font=('Ubuntu 24 bold'), bg=co2, fg=co0)
+l_resultado = Label(frame_baixo, text='---', width=5, height=1, padx=6, pady=12, relief='flat', anchor='center', font=('Ubuntu 24 bold'), bg=co2, fg=co1)
 l_resultado.place(x=170, y=10)
 l_resultado_texto = Label(frame_baixo, text='', width=37, height=1, padx=0, pady=12, relief='flat', anchor='center', font=('Ubuntu 10 bold'), bg=co0, fg=co1)
 l_resultado_texto.place(x=0, y=85)
 
 #botão de calcular
-b_calcular = Button(frame_baixo, command=calcular, text='Calcular', width=34, height=1,overrelief='solid', relief='raised', anchor='center', font=('Ubuntu 10 bold'), bg=co2, fg=co0)
+b_calcular = Button(frame_baixo, command=calcular, text='Calcular', width=34, height=1,overrelief='solid', relief='raised', anchor='center', font=('Ubuntu 10 bold'), bg=co2, fg=co1)
 b_calcular.grid(row=4, column=0, sticky=NSEW, pady=60, padx=5, columnspan=40)
 
 
